@@ -11,7 +11,9 @@ const Hero = () => {
 					your next journey. We specialize in camper rentals so you
 					can embark on your travels with comfort and style.
 				</h1>
-				<Link className={scss.link} to="/catalog">Try now</Link>
+				<Link className={scss.link} to="/catalog">
+					Try now
+				</Link>
 			</Container>
 		</section>
 	);
