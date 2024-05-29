@@ -1,0 +1,15 @@
+.header {
+	background: var(--inputs);
+	display: flex;
+
+	justify-content: space-between;
+	align-items: center;
+	padding: 24px 48px;
+	box-shadow: 0 0 6px var(--main);
+
+	& .header_links {
+		display: flex;
+		gap: 32px;
+		font-size: 22px;
+	}
+}
