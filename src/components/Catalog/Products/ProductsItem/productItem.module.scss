@@ -1,0 +1,41 @@
+.list_item {
+	display: flex;
+	gap: 24px;
+	border: 1px solid rgba(16, 24, 40, 0.2);
+	border-radius: 20px;
+	padding: 24px;
+	margin-bottom: 32px;
+}
+
+.item_img {
+	width: 290px;
+	height: 310px;
+	border-radius: 10px;
+}
+
+.titleNamePrice {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.titleName {
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 1.25;
+	color: var(--main);
+}
+.titlePrice {
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 1.25;
+	color: var(--main);
+}
+
+.data_rating {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1.5;
+	text-decoration: underline;
+	text-decoration-skip-ink: none;
+	color: var(--main);
+}

@@ -1,0 +1,28 @@
+[
+	{
+		"icon": "ac",
+		"title": "AC",
+		"back": "AC"
+	},
+
+	{
+		"icon": "automatic",
+		"title": "Automatic",
+		"back": "transmission"
+	},
+	{
+		"icon": "kitchen",
+		"title": "Kitchen",
+		"back": "kitchen"
+	},
+	{
+		"icon": "tv",
+		"title": "TV",
+		"back": "TV"
+	},
+	{
+		"icon": "shower",
+		"title": "Shower/WC",
+		"back": "shower"
+	}
+]

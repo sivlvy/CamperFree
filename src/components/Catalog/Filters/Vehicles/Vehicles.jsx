@@ -1,17 +1,16 @@
-import scss from './Equipment.module.scss';
+import scss from './vehicles.module.scss';
 import icons from '../../../../assets/icons.svg';
-
-const Equipment = ({ data, register }) => {
+const Vehicles = ({ data, register }) => {
 	return (
 		<>
-			<h3 className={scss.title}>Vehicle equipment</h3>
+			<h3 className={scss.title}>Vehicle type</h3>
 
-			<div className={scss.wrapper_equip}>
-				{data.map(({ title, icon, back }) => (
+			<div className={scss.wrapper_vehicle}>
+				{data.map(({ title, icon }) => (
 					<div key={icon} className={scss.item}>
 						<input
-							{...register(`${back}`)}
-							type="checkbox"
+							{...register('vehicles')}
+							type="radio"
 							id={icon}
 							value={title}
 							className={`${scss.visually_hidden} ${scss.item_input}`}
@@ -29,4 +28,4 @@ const Equipment = ({ data, register }) => {
 	);
 };
 
-export default Equipment;
+export default Vehicles;

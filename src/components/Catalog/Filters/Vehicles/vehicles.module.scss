@@ -5,8 +5,10 @@
 	line-height: 1.2;
 	margin-bottom: 48px;
 	color: var(--main);
+	margin-top: 32px;
 }
-.wrapper_equip {
+.wrapper_vehicle {
+	text-align: center;
 	position: relative;
 	display: flex;
 	flex-direction: row;
@@ -14,7 +16,7 @@
 	gap: 10px;
 }
 
-.wrapper_equip::before {
+.wrapper_vehicle::before {
 	content: '';
 	position: absolute;
 	height: 2px;

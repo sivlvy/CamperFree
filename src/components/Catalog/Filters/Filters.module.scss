@@ -9,3 +9,24 @@
 	color: var(--text);
 	margin-bottom: 14px;
 }
+
+.btn {
+	align-items: center;
+	justify-content: center;
+	width: 200px;
+	margin: 0 auto;
+	margin-top: 64px;
+	font-weight: 500;
+	line-height: 1.5;
+	letter-spacing: -0.01em;
+	color: #fff;
+	background-color: var(--button);
+	border-radius: 200px;
+	transition: background-color 0.3s;
+	padding: 16px 40px;
+
+	&:hover,
+	&:focus {
+		background-color: #d84343;
+	}
+}

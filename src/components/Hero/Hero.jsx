@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
-import scss from './Hero.module.scss';
 
+import scss from './Hero.module.scss';
 import Container from 'components/Container/Container';
 const Hero = () => {
 	return (
