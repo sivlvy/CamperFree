@@ -1,0 +1,43 @@
+.wrapper_modal {
+	border: 1px solid black;
+	padding: 40px;
+	border-radius: 20px;
+}
+
+.title {
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 1.25;
+	color: var(--main);
+}
+
+.price {
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 1.25;
+	color: var(--main);
+}
+.titleRatingLocation {
+	display: flex;
+	gap: 16px;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1.5;
+	text-decoration: underline;
+	text-decoration-skip-ink: none;
+	color: var(--main);
+}
+
+.list_images {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 16px;
+	overflow: auto;
+}
+
+.image {
+	width: 260px;
+	height: 310px;
+	object-fit: cover;
+	border-radius: 10px;
+}

@@ -1,7 +1,21 @@
 import scss from './productItem.module.scss';
 
+import Modal from 'react-modal';
+
+import { useState } from 'react';
+import ProductModal from '../ProductModal/ProductModal';
+
 const ProductsItem = ({ data }) => {
-	console.log(data);
+	const [isModalOpen, setIsModalOpen] = useState(false);
+
+	const openModal = () => {
+		setIsModalOpen(true);
+	};
+
+	const closeModal = () => {
+		setIsModalOpen(false);
+	};
+
 	const shortDescription =
 		data.description.length > 100
 			? data.description.slice(0, 100) + '...'
@@ -18,10 +32,12 @@ const ProductsItem = ({ data }) => {
 					<h2 className={scss.titleName}>{data.name}</h2>
 					<p className={scss.titlePrice}>€{data.price}</p>
 				</div>
-				<p className={scss.rating}>
-					{data.rating} ({data.reviews.length} reviews)
-				</p>
-				<p className={scss.location}>{data.location}</p>
+				<div className={scss.itemRatingLocation}>
+					<p className={scss.rating}>
+						{data.rating} ({data.reviews.length} reviews)
+					</p>
+					<p className={scss.location}>{data.location}</p>
+				</div>
 				<p className={scss.description}>{shortDescription}</p>
 				<ul className={scss.facilities}>
 					<li className={scss.facilities_item}>
@@ -46,6 +62,17 @@ const ProductsItem = ({ data }) => {
 						</p>
 					</li>
 				</ul>
+				<button className={scss.btn} onClick={openModal}>
+					See more
+				</button>
+				<Modal
+					isOpen={isModalOpen}
+					onRequestClose={closeModal}
+					className={scss.custom_modal}
+					overlayClassName={scss.custom_overlay}
+				>
+					<ProductModal data={data} />
+				</Modal>
 			</div>
 		</li>
 	);
